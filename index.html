@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main-container">
+      <h1>Mortgage Calculator</h1>
+      <div class="container">
+        <label for="principal">Principal loan amount</label>
+        <input id="principal" type="number" name="principal" min="0" />
+      </div>
+
+      <div class="container">
+        <label class="interest" for="interest">Interest rate</label>
+        <input id="interest" type="number" name="interest" min="0" />
+        <p class="percent">%</p>
+      </div>
+      <div class="container">
+        <label class="length" for="length">Length of loan</label>
+        <input id="length" type="number" name="length" min="0" />
+        <p class="years">Years</p>
+      </div>
+
+      <div class="container">
+        <input id="submit" type="submit" name="submit" value="Calculate" />
+
+        <p>Your monthly mortgage payment will be <span id="total">$0</span></p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
