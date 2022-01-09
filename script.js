@@ -5,7 +5,7 @@ const submit = document.getElementById("submit");
 const total = document.getElementById("total");
 
 submit.addEventListener("click", function () {
-  if (principal.value !== "" && interest.value !== "" && length.value !== "") {
+  if (principal.value > 0 && interest.value >= 0 && length.value > 0) {
     let p = principal.value;
     let r = interest.value / 100 / 12;
     let n = length.value * 12;
